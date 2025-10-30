@@ -7,8 +7,8 @@
                 color:white;
                 background-color:black;
             }
-            body.normal{
-                color:purple
+            body.backToNormal{
+                color:purple;
                 background-color:white;
             }
         </style>
@@ -16,14 +16,14 @@
     <body>
         <h1>My Magical Adventure</h1>
         <p>Hello,Bestie Come See The Magic</p>
-        <button type="button" onclick()="Go dark">goDark
+        <button type="button" onclick="goDark()">goDark
         </button>
-        <button type="button"onclick()
-        ="normal">normal</button>  
+        <button type="button" onclick
+        ="backToNormal()">normal</button>  
         <script>
-            function goDark{}{
-                document.body.classname="dark";
-                function normal{}{
-                    document.body.classname="normal";
-                }
+            function goDark(){
+                document.body.className="dark";
             }
+            function backToNormal(){
+                document.body.className="backToNormal";
+                }

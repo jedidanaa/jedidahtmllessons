@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Handling PT2</title>
+        <style>
+            .rectangle{
+                border: 1px solid black;
+                width: 200px;
+                height:200px;
+                margin:auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Making Changes To A Rectangle</h2>
+        <div class="rectangle"></div>
+        <div class="buttons">
+            <button type="button" onclick="Makecircle()">Make Circle</button>
+            <button type="button" onclick="show()">Show</button>
+            <button  type="buttton" onclick="hide()">hide</button>
+        </div>
+        <script>
+            var div = document.querySelector('.rectangle');
+
+            function Makecircle(){
+                div.style.borderRadius= '50%';
+            }
+        </script>
+    </body>
+</html>
