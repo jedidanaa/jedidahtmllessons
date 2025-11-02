@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Potfolio making in HTML</title>
+        <style>
+            body{
+                background-color:aqua;
+                color:orangered;
+                text-decoration:  solid underline;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#gallery">gallery</a></li>
+            </ul>
+        </nav>
+               <img src="https://th.bing.com/th/id/OIP.4ImgsUXePV1y8dmC8xWTwwHaE7?w=268&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Cute Anime Girl"></img>
+               <button onclick="moreOnCuteAnimeGirl()">More On Cute Anime Girl</button>
+               <p id="info"></p>
+            <script>
+                function moreOnCuteAnimeGirl(){
+                    document.getElementById("info").innerHtml="She is a cute girl sitting in a park,holding a teddy bear with her innocent blue eyes."
+                }
+            </script>
+    </body>
+</html>
