@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>My Slides</title>
+     </head>
+     <body>
+     <img class="mySlides" src="https://th.bing.com/th/id/OIP.iB2WhzW5hZg2aH-HBRy3aAHaNJ?w=115&h=183&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg=1" alt="zoey DTI">
+     <img class="mySlides" src="https://th.bing.com/th/id/OIP.k2IZriZiY8A8sjhgZz7u1gAAAA?w=208&h=268&c=7&r=0&o=7&cb=ucfimg2&dpr=1.3&pid=1.7&rm=3&ucfimg" alt="huntrix">
+     <script>
+          myindex=0;
+          function carousel(){
+               var i 
+               var x = document.getElementByClassName("mySlide");
+               for(i = 0; i < x.length; i++){
+                  x[i].style.display="none;"
+               }
+               myindex++
+               if (my index > x.length){
+                    myindex = 1
+               }
+               x[myindex-1].style.display="block";
+               setTimeout(carousel,3000)
+               
+          }
+          carousel()
+     </script>
+     </body>
+</html>
